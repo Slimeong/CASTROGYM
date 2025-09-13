@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #0d1b2a, #1b263b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.logo {
+  width: 30vw; /* tamaño proporcional al ancho de pantalla */
+  max-width: 300px;
+  margin-bottom: 5vh;
+}
+
+.form-container {
+  background: rgba(27, 38, 59, 0.95);
+  padding: 5vh 5vw;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  width: 90vw; /* casi todo el ancho de la pantalla */
+  max-width: 420px;
+}
+
+label {
+  display: block;
+  margin-bottom: 2vh;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+input {
+  padding: 1.5vh;
+  width: 100%;
+  font-size: 2vh;
+  border: 1px solid #415a77;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 3vh;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  padding: 1.5vh;
+  border: none;
+  background: #1abc9c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 2vh;
+  width: 100%;
+}
+
+button:hover {
+  background: #16a085;
+}
+
+/* Ajustes para celulares 1080px de ancho o menos */
+@media (max-width: 1080px) {
+  .logo {
+    width: 40vw;     /* más grande proporcionalmente en celular */
+    max-width: 350px;
+  }
+
+  label {
+    font-size: 2.5vh;
+  }
+
+  input, button {
+    font-size: 2.5vh;
+    padding: 2vh;
+  }
+}
