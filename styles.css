@@ -63,6 +63,7 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+
 .boton {
   display: block;
   text-align: center;
@@ -79,4 +80,13 @@ button:hover {
   background: linear-gradient(135deg, #0056b3, #0096c7);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 🔴 Estilo para "Cerca de Vencerse" y "Vencidos" */
+.boton.peligro {
+  background: linear-gradient(135deg, #ff4d4d, #b30000);
+}
+
+.boton.peligro:hover {
+  background: linear-gradient(135deg, #cc0000, #800000);
 }
